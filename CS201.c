@@ -3,7 +3,6 @@
 // Rishabh Rawat (2023MCB1377)
 // Aditya Kumar (2023CSB1094)
 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -159,6 +158,7 @@ unsigned long calculateHash(Block *block) {
              block->roll_no, block->name, block->dob,
              block->timestamp, block->previous_hash); 
     
+    // Generate a simple hash (for demonstration)
     unsigned long hash = 5381;
     int c;
     char *ptr = combined;
@@ -293,6 +293,7 @@ void freeBlockchain(Block* head) {
 // Main program to demonstrate blockchain and VEB tree interaction
 int main() {
 
+    printf("Welcome to the blockchain demo!\n");
     // Initialize blockchain and VEB tree
     Block* blockchain = NULL;
     vEBTree* veb_tree = createVEBTree(VEB_UNIVERSE); // Universe size for 8-digit block keys
@@ -320,17 +321,18 @@ int main() {
 
     char line[200];
     fgets(line, sizeof(line), file); // Skip the header line
+    
     while (fgets(line, sizeof(line), file)) {
         
-        char *id_str = strtok(line, ",");
-        char *name = strtok(NULL, ",");
+        char *id_str = strtok(line, ","); // strok is used to split the line by comma
+        char *name = strtok(NULL, ","); // NULL is used to continue from the last position
         char *date = strtok(NULL, ",");
         char *num_str = strtok(NULL, ",");
 
         int id = atoi(id_str);
         int num = atoi(num_str);
 
-        if (id && name && date && num) {
+        if (id && name && date && num) { // Check if all fields are valid
             blockchain = appendBlock(blockchain, createBlock(id, name, date, hashed_key(num), current_hash));
             vEBInsert(veb_tree, id);
         }
@@ -371,7 +373,7 @@ int main() {
                         printf("Name: %s\n", decrypt(block->name));
                         printf("DOB: %s\n", decrypt(block->dob));
                         printf("Hash: %s\n", block->previous_hash);
-                        printf("EncryptedBlock key: %d\n", block->block_key);
+                        printf("Encrypted Block key: %d\n", block->block_key);
 
                     } else {
                         printf("--------------------\n");
@@ -432,6 +434,7 @@ int main() {
 
                 // Close the file
                 fclose(file);
+                fflush(file);
                 
 
                 printf("New block created successfully with roll no %d!\n",roll_num);
