@@ -1,7 +1,7 @@
 // CS201 Project- Blockchain implementation using vEB tree
 // Adarsh Chaudhary (2023CSB1321)
 // Rishabh Rawat (2023MCB1377)
-// Aditya Kumar (2023CSB1094)
+// Aditya Kumar (2023CSB1096)
 
 #include <stdio.h>
 #include <stdlib.h>
