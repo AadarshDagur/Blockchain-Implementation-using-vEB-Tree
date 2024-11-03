@@ -48,6 +48,7 @@ Expected Output:
 If your block key matches the encrypted stored key, your details (name and date of birth) will be decrypted and displayed. The hash and encrypted block key will also be shown.
 If the block key is incorrect, only encrypted data will be shown.
 
+
 2.Enter a New Block:
 <br>
 Input:
