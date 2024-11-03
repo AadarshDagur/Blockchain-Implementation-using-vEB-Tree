@@ -4,7 +4,8 @@ This project is a blockchain implementation that uses a Van Emde Boas (vEB) tree
 The blockchain maintains blocks containing user details, each with a unique key stored in a vEB tree for quick lookups. 
 The vEB tree helps verify the existence of keys in the blockchain, allowing users to search for their information or add new entries.
 
-Authors
+Authors:
+<br>
 Adarsh Chaudhary (2023CSB1321)
 Rishabh Rawat (2023MCB1377)
 Aditya Kumar (2023CSB1094)
