@@ -28,6 +28,7 @@ The program offers an interactive menu for users, allowing for the following ope
 
 Menu Options
 1. Check Your Data:
+   
 Input:
 Roll Number: Enter your roll number as an integer.
 Block Key: Enter your unique 8-digit block key.
