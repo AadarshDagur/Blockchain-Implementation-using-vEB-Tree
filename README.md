@@ -8,11 +8,11 @@ The vEB tree helps verify the existence of keys in the blockchain, allowing user
 
 Authors:
 <br>
-Adarsh Chaudhary (2023CSB1321)
+1. Adarsh Chaudhary (2023CSB1321)
 <br>
-Rishabh Rawat (2023MCB1377)
+2. Rishabh Rawat (2023MCB1377)
 <br>
-Aditya Kumar (2023CSB1094)
+3. Aditya Kumar (2023CSB1094)
 
 Prerequisites
 <br>
