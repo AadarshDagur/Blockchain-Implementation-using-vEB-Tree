@@ -35,7 +35,7 @@ Input and Usage Guide
 The program offers an interactive menu for users, allowing for the following operations:
 
 Menu Options
-1. Check Your Data:
+1.Check Your Data:
 <br>
 Input:
 <br>
@@ -47,7 +47,6 @@ Expected Output:
 <br>
 If your block key matches the encrypted stored key, your details (name and date of birth) will be decrypted and displayed. The hash and encrypted block key will also be shown.
 If the block key is incorrect, only encrypted data will be shown.
-
 
 2.Enter a New Block:
 <br>
